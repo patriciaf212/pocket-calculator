@@ -1,0 +1,14 @@
+/*mystyle.css */
+h1 {
+  text-align: center;
+}
+
+button {
+  display: inline-block;
+  margin: auto;
+  margin-left: 1%;
+  margin-right: 1%;
+  height: 10px;
+  width: 10px;
+  font: 1.1em "Century Gothic", "Century Gothic", "Apple Gothic", sans-serif;
+}
