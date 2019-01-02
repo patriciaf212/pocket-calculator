@@ -4,7 +4,7 @@
     <title>Pocket Calculator</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="css/pocket-calculator.css"/>
+    <link rel="stylesheet" type="text/css" href="pocket-calculator.css"/>
 
     <!-- JavaScript -->
     <script type="text/javascript" src="js/pocket-calculator.js"></script>
@@ -12,25 +12,124 @@
 
   <body>
     <h1>POCKET CALCULATOR</h1>
-
-    <div class="division" id="division">
-        <button onclick="division();">  -  </button>
-      </div>
-
-      <div class="multiplication" id="multiplication">
-          <button onclick="multiplication();">  x  </button>
-        </div>
-
-      <div class="subtraction" id="subtraction">
-          <button onclick="subtraction();">  -  </button>
-        </div>
-
-    <div class="addition" id="addition">
-        <button onclick="addition();"> + </button>
-      </div>
-
-    <div class="equal" id="equal">
-        <button onclick="equal();">  =  </button>
-      </div>
+    <hr/>
+    <table>
+      <thread>
+        <tr>
+          <th> space <th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div class="AC" id="AC">
+              <button onclick="AC();">  AC  </button>
+            </div>
+          </td>
+          <td>
+            <div class="integer" id="integer">
+                <button onclick="integer();">  +/-  </button>
+            </div>
+          </td>
+          <td>
+            <div class="percentage" id="percentage">
+              <button onclick="percentage();">  %  </button>
+            </div>
+          </td>
+          <td>
+            <div class="division" id="division">
+              <button onclick="division();">  /  </button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="seven" id="seven">
+              <button onclick="seven();">  7  </button>
+            </div>
+          </td>
+          <td>
+            <div class="eight" id="eight">
+              <button onclick="eight();">  8  </button>
+            </div>
+          </td>
+          <td>
+            <div class="nine" id="nine">
+              <button onclick="nine();">  9  </button>
+            </div>
+          </td>
+          <td>
+            <div class="multiplication" id="multiplication">
+              <button onclick="multiplication();">  x  </button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="four" id="four">
+              <button onclick="four();">  4  </button>
+            </div>
+          </td>
+          <td>
+            <div class="five" id="five">
+              <button onclick="five();">  5  </button>
+            </div>
+          </td>
+          <td>
+            <div class="six" id="six">
+              <button onclick="six();">  6  </button>
+            </div>
+          </td>
+          <td>
+            <div class="subtraction" id="subtraction">
+              <button onclick="subtraction();">  -  </button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="one" id="one">
+              <button onclick="one();">  1  </button>
+            </div>
+          </td>
+          <td>
+            <div class="two" id="two">
+                <button onclick="two();">  2  </button>
+            </div>
+          </td>
+          <td>
+            <div class="three" id="three">
+              <button onclick="three();">  3   </button>
+            </div>
+          </td>
+          <td>
+            <div class="addition" id="addition">
+              <button onclick="addition();">  +  </button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="zero" id="zero">
+              <button onclick="zero();">  0  </button>
+            </div>
+          </td>
+          <td>
+            <div class="decimal" id="decimal">
+              <button onclick="decimal();">  .   </button>
+            </div>
+          </td>
+          <td>
+            <div class="equal" id="equal">
+              <button onclick="equal();">  =  </button>
+            </div>
+          </td>
+          <td>
+            <div class="blank" id="blank">
+              <button onclick="blank();">    </button>
+            </div>
+          </td>
+        </tr>
+      </tbody>
 
   </body>
