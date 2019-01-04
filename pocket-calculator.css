@@ -12,14 +12,45 @@ button {
   width: 50px;
   font: 20px  "Century Gothic", "Century Gothic", "Apple Gothic", sans-serif;
   border-radius: 4px;
-  background-color: Powderblue
+  background-color: Powderblue;
 }
 
 button:hover {
-  background-color: silver;
+  background-color: AliceBlue;
 }
 
 table {
   margin-left: auto;
   margin-right:auto;
+}
+#zButton {
+  width: 100px;
+}
+
+#operations {
+  background-color: silver;
+}
+
+#operations:hover {
+  background-color: AliceBlue;
+}
+
+#other {
+  background-color: Gainsboro;
+}
+
+#other:hover {
+  background-color: AliceBlue;
+}
+
+#display {
+  background-color: AliceBlue;
+  height: 50px;
+  width: 125px;
+  padding: 0px 45px;
+  padding-botton: 0px;
+}
+
+p {
+  text-align: center;
 }

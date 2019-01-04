@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="pocket-calculator.css"/>
 
     <!-- JavaScript -->
-    <script type="text/javascript" src="js/pocket-calculator.js"></script>
+    <script type="text/javascript" src="pocket-calculator.js"></script>
   </head>
 
   <body>
@@ -16,29 +16,30 @@
     <table>
       <thread>
         <tr>
-          <th> space <th>
+          <th colspan="4">
+            <p id="display"> 0 </th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <td>
             <div class="AC" id="AC">
-              <button onclick="AC();">  AC  </button>
+              <button id = "other" onclick="AC();">  AC  </button>
             </div>
           </td>
           <td>
             <div class="integer" id="integer">
-                <button onclick="integer();">  +/-  </button>
+                <button id = "other" onclick="integer();">  +/-  </button>
             </div>
           </td>
           <td>
             <div class="percentage" id="percentage">
-              <button onclick="percentage();">  %  </button>
+              <button id = "other" onclick="percentage();">  %  </button>
             </div>
           </td>
           <td>
             <div class="division" id="division">
-              <button onclick="division();">  /  </button>
+              <button id= "operations" onclick="division();">  /  </button>
             </div>
           </td>
         </tr>
@@ -60,7 +61,7 @@
           </td>
           <td>
             <div class="multiplication" id="multiplication">
-              <button onclick="multiplication();">  x  </button>
+              <button id = "operations" onclick="multiplication();">  x  </button>
             </div>
           </td>
         </tr>
@@ -82,7 +83,7 @@
           </td>
           <td>
             <div class="subtraction" id="subtraction">
-              <button onclick="subtraction();">  -  </button>
+              <button id = "operations" onclick="subtraction();">  -  </button>
             </div>
           </td>
         </tr>
@@ -104,14 +105,14 @@
           </td>
           <td>
             <div class="addition" id="addition">
-              <button onclick="addition();">  +  </button>
+              <button id = "operations" onclick="addition();">  +  </button>
             </div>
           </td>
         </tr>
         <tr>
-          <td>
+          <td colspan="2">
             <div class="zero" id="zero">
-              <button onclick="zero();">  0  </button>
+              <button id= "zButton" onclick="zero();">  0  </button>
             </div>
           </td>
           <td>
@@ -121,15 +122,9 @@
           </td>
           <td>
             <div class="equal" id="equal">
-              <button onclick="equal();">  =  </button>
-            </div>
-          </td>
-          <td>
-            <div class="blank" id="blank">
-              <button onclick="blank();">    </button>
+              <button id = "operations" onclick="equal();">  =  </button>
             </div>
           </td>
         </tr>
       </tbody>
-
   </body>
