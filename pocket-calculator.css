@@ -45,12 +45,16 @@ table {
 
 #display {
   background-color: AliceBlue;
-  height: 50px;
-  width: 125px;
-  padding: 0px 45px;
-  padding-botton: 0px;
+  height: 60px;
 }
 
 p {
   text-align: center;
+  font: 20px  "Century Gothic", "Century Gothic", "Apple Gothic", sans-serif;
+  font-weight: bold;
+}
+
+canvas {
+  display: block;
+  margin: auto;
 }
