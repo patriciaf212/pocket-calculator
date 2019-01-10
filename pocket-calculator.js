@@ -62,11 +62,6 @@ function zero() {
   p.innerHTML = str;
 }
 
-function addition() {
-  let p = document.getElementById("display");
-  str += "+";
-  p.innerHTML = str;
-}
 
 function subtraction() {
   let p = document.getElementById("display");
@@ -100,14 +95,15 @@ function percentage() {
 
 function equal() {
   let p = document.getElementById("display");
-  str += "=";
-  p.innerHTML = str;
+  let sum = 0;
+  let addNumber;
+  let numberAdd;
+  sum = addNumber + numberAdd;
+  p.innerHTML = sum;
 }
 
 function addition() {
-  let sum = 0;
-  let addNumber = "";
-  let numberAdd = "";
-
-  sum = addNumber + numberAdd;
+  let p = document.getElementById("display");
+  str += "+";
+  p.innerHTML = str;
 }
