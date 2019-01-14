@@ -1,5 +1,5 @@
 let p = document.getElementById("display");
-let str = ""
+let str = "";
 p.innerHTML= 0;
 
 function one() {
@@ -107,3 +107,11 @@ function addition() {
   str += "+";
   p.innerHTML = str;
 }
+
+//function decimal() {
+  //if (x > 999) {
+    //let p = document.getElementById("display");
+    //p.innerHTML = x + "," + x + ",";
+  //}
+//}
+//
