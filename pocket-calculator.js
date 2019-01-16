@@ -110,8 +110,6 @@ function addition() {
 
 //function decimal() {
   //if (x > 999) {
-    //let p = document.getElementById("display");
-    //p.innerHTML = x + "," + x + ",";
+    //let p = document.getElementById("display").value = y.toLocalString();
   //}
 //}
-//
