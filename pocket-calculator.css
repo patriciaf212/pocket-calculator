@@ -51,15 +51,5 @@ table {
   max-height: 80px;
   border-radius: 4px;
   border-style: solid;
+  font-size: 30px;
  }
-
-p {
-  text-align: center;
-  font: 20px  "Century Gothic", "Century Gothic", "Apple Gothic", sans-serif;
-  font-weight: bold;
-}
-
-canvas {
-  display: block;
-  margin: auto;
-}

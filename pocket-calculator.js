@@ -93,14 +93,41 @@ function percentage() {
   p.innerHTML = str;
 }
 
-function equal() {
-  let p = document.getElementById("display");
-  let sum = 0;
-  let addNumber;
-  let numberAdd;
-  sum = addNumber + numberAdd;
-  p.innerHTML = sum;
-}
+//function equal() {
+//let p = document.getElementById("display");
+//  switch (operations) {
+//   case "addition":
+  //  let sum = 0;
+  //  let a = [];
+  //  let b = [];
+  //  sum = eval("a + b")
+  //  p.innerHTML = sum;
+  //    break;
+  // case "subtraction":
+  //  let difference = 0;
+  //  let a = [];
+  //  let b = [];
+  //  difference = eval("a - b")
+  //  p.innerHTML = difference;
+  //    break;
+//   case "multiplication":
+//    let product = 0;
+//    let a = [];
+//    let b = [];
+  //  product = eval("a * b")
+//    p.innerHTML = product;
+  //    break;
+//   case "division":
+//    let quotient = 0;
+//    let a = [];
+//    let b = [];
+//    quotient = eval("a / b")
+//    p.innerHTML = quotient;
+//      break;
+//   default:
+  //    p.innerHTML = "ERROR";
+  //    break;
+//}
 
 function addition() {
   let p = document.getElementById("display");
