@@ -1,6 +1,5 @@
-let p = document.getElementById("display");
 let str = "";
-p.innerHTML= 0;
+let val = 0;
 
 function one() {
   let p = document.getElementById("display");
@@ -28,7 +27,7 @@ function four() {
 
 function five() {
   let p = document.getElementById("display");
-  str += "4";
+  str += "5";
   p.innerHTML = str;
 }
 
@@ -71,7 +70,7 @@ function subtraction() {
 
 function multiplication() {
   let p = document.getElementById("display");
-  str += "x";
+  str += "*";
   p.innerHTML = str;
 }
 
@@ -81,62 +80,50 @@ function division() {
   p.innerHTML = str;
 }
 
-function decimal() {
-  let p = document.getElementById("display");
-  str += ".";
-  p.innerHTML = str;
-}
-
-function percentage() {
-  let p = document.getElementById("display");
-  str += "% ";
-  p.innerHTML = str;
-}
-
-//function equal() {
-//let p = document.getElementById("display");
-//  switch (operations) {
-//   case "addition":
-  //  let sum = 0;
-  //  let a = [];
-  //  let b = [];
-  //  sum = eval("a + b")
-  //  p.innerHTML = sum;
-  //    break;
-  // case "subtraction":
-  //  let difference = 0;
-  //  let a = [];
-  //  let b = [];
-  //  difference = eval("a - b")
-  //  p.innerHTML = difference;
-  //    break;
-//   case "multiplication":
-//    let product = 0;
-//    let a = [];
-//    let b = [];
-  //  product = eval("a * b")
-//    p.innerHTML = product;
-  //    break;
-//   case "division":
-//    let quotient = 0;
-//    let a = [];
-//    let b = [];
-//    quotient = eval("a / b")
-//    p.innerHTML = quotient;
-//      break;
-//   default:
-  //    p.innerHTML = "ERROR";
-  //    break;
-//}
-
 function addition() {
   let p = document.getElementById("display");
   str += "+";
   p.innerHTML = str;
 }
 
+function decimal() {
+  let p = document.getElementById("display");
+  str += ".";
+  p.innerHTML = str;
+}
+
+//function AC() {
+  //let p = document.getElementById("display");
+  //p.innerHTML = "0";
+//}
+
+function equal() {
+  let p = document.getElementById("display");
+  p.innerHTML = str;
+  var result = eval(str);
+  p.innerHTML = result;
+  if (result > 999999999) {
+    var exponent = result.toExponential();
+    document.getElementById("display");
+    p.innerHTML = exponent;
+  }
+  }
+
+//  function negation() {
+  //  let p = document.getElementById("display");
+    //val = 0 - val;
+  //}
+
+  //function percentage() {
+    //let p = document.getElementById("display");
+    //val = val / 100;
+  //}
+
 //function decimal() {
   //if (x > 999) {
     //let p = document.getElementById("display").value = y.toLocalString();
   //}
+//}
+
+//  if (number >)
 //}
