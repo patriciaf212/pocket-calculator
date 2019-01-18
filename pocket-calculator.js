@@ -1,6 +1,7 @@
 let str = "";
 let val = 0;
-
+let c = 1;
+let str2 = "";
 function one() {
   let p = document.getElementById("display");
   str += "1";
@@ -61,30 +62,50 @@ function zero() {
   p.innerHTML = str;
 }
 
+function addition() {
+  let p = document.getElementById("display");
+    if (c === 1) {
+      str2 = str
+      c++;
+      str = "";
+    }
+    str2 += "+";
+    p.innerHTML = str;
+}
 
 function subtraction() {
   let p = document.getElementById("display");
-  str += "-";
-  p.innerHTML = str;
+  if (c === 1) {
+    str2 = str
+    c++;
+    str = "";
+  }
+  str2 += "-";
+  p.innerHTML = 0;
 }
 
 function multiplication() {
   let p = document.getElementById("display");
-  str += "*";
-  p.innerHTML = str;
+  if (c === 1) {
+    str2 = str
+    c++;
+    str = "";
+  }
+  str2 += "*";
+  p.innerHTML = 0;
 }
 
 function division() {
   let p = document.getElementById("display");
-  str += "/";
-  p.innerHTML = str;
+  if (c === 1) {
+    str2 = str
+    c++;
+    str = "";
+  }
+  str2 += "/";
+  p.innerHTML = 0;
 }
 
-function addition() {
-  let p = document.getElementById("display");
-  str += "+";
-  p.innerHTML = str;
-}
 
 function decimal() {
   let p = document.getElementById("display");
@@ -92,38 +113,46 @@ function decimal() {
   p.innerHTML = str;
 }
 
-//function AC() {
-  //let p = document.getElementById("display");
-  //p.innerHTML = "0";
-//}
+function AC() {
+  let p = document.getElementById("display");
+  str = "";
+  str2 = "";
+  c = 1;
+  p.innerHTML = "0";
+}
 
 function equal() {
   let p = document.getElementById("display");
+  str = str2 + str;
   p.innerHTML = str;
   var result = eval(str);
   p.innerHTML = result;
-  if (result > 999999999) {
-    var exponent = result.toExponential();
+  if (result > 999999999 || result.length < 10) {
+    var exponent = result.toPrecision(5);
     document.getElementById("display");
     p.innerHTML = exponent;
   }
+
+
+//  if (result === "infinity") {
+    //  p.innerHTML = "ERROR";
+    //}
   }
 
-//  function negation() {
+//function negation() {
   //  let p = document.getElementById("display");
-    //val = 0 - val;
+  //  val = -val;
   //}
 
-  //function percentage() {
-    //let p = document.getElementById("display");
-    //val = val / 100;
-  //}
+function percentage() {
+  let p = document.getElementById("display");
+    str = Number(str);
+    str = str*(.01);
+    p.innerHTML = str;
+  }
 
 //function decimal() {
   //if (x > 999) {
     //let p = document.getElementById("display").value = y.toLocalString();
   //}
-//}
-
-//  if (number >)
 //}
