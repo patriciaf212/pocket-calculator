@@ -4,7 +4,6 @@ let str2 = "";
 let c = 1;
 
 
-
 function one() {
   let p = document.getElementById("display");
   str += "1";
