@@ -144,8 +144,8 @@ function equal() {
     p.innerHTML = exponent;
   }
 
-  if (result === " ") {
-      result = ERROR;
+  if (!isFinite(result)) {
+      p.innerHTML = "ERROR";
     }
   }
 
