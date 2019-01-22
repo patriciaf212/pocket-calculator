@@ -2,7 +2,7 @@ let str = "";
 let val = 0;
 let str2 = "";
 let c = 1;
-
+let decimal2 = 0;
 
 function one() {
   let p = document.getElementById("display");
@@ -78,7 +78,7 @@ function addition() {
     if (c === 1) {
       str2 = str;
       c++
-      str = "";
+      str = " ";
     }
     str2 += "+";
     p.innerHTML = " ";
@@ -89,7 +89,7 @@ function subtraction() {
   if (c === 1) {
     str2 = str;
     c++
-    str = "";
+    str =  " ";
   }
   str2 += "-";
   p.innerHTML = " ";
@@ -100,7 +100,7 @@ function multiplication() {
   if (c === 1) {
     str2 = str;
     c++
-    str = "";
+    str = " ";
   }
   str2 += "*";
   p.innerHTML = " ";
@@ -111,7 +111,7 @@ function division() {
   if (c === 1) {
     str2 = str;
     c++
-    str = "";
+    str = " ";
   }
   str2 += "/";
   p.innerHTML = " ";
@@ -119,13 +119,17 @@ function division() {
 
 function decimal() {
   let p = document.getElementById("display");
-  str += ".";
-  if (str.length > 2) str = str.substring(0,2);
-  p.innerHTML = str;
+//  str += ".";
+  //if (str.length > 9) str = str.substring(0,9);
+  //p.innerHTML = str;
+if (decimal2 == 0) {
+  str += "."
+  decimal2++;
 }
 
-function AC() {
-  let p = document.getElementById("display");
+}
+
+function AC() {  let p = document.getElementById("display");
   str = "";
   str2 = "";
   c = 1;
@@ -138,6 +142,11 @@ function equal() {
   p.innerHTML = str;
   var result = eval(str);
   p.innerHTML = result;
+
+  if (result > 999 && result < 999999999) {
+    p.innerHTML = result.toLocaleString();
+  }
+
   if (result > 999999999 || result.length < 10) {
     var exponent = result.toPrecision(5);
     document.getElementById("display");
@@ -151,9 +160,8 @@ function equal() {
 
 function negation() {
   let p = document.getElementById("display");
-  str += "-"
+  str = -str
   p.innerHTML = str;
-  val = 0 - val;
   }
 
 function percentage() {
